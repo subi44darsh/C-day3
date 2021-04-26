@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string a = " It is a bad color";
+        char[] arr;
+        arr=a.ToCharArray();
+        for(int i=0;i<arr.Length;i++)
+        {
+            if(char. IsUpper(arr[i]))
+            {
+                Console.Write(char.ToLower(arr[i]));
+            }
+            else
+            {
+                 Console.Write(char.ToUpper(arr[i]));
+            }
+        }
+       
+        }
+
+}

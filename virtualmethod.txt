@@ -1,0 +1,25 @@
+using System;
+ class Class1
+ {
+     abstract class Employee
+     {
+         public virtual string VirtualMethod()
+         {
+             return"hello i am getting called from base";
+         }
+     }
+     class Class2: Employee
+     {
+         public override string VirtualMethod()
+         {
+             return "hello i am getting called from derived class";
+         }
+         public static void Main()
+         {
+             Class2 class2= new Class2();
+             Console.WriteLine(class2.VirtualMethod());
+         }
+     }
+     
+ 
+}

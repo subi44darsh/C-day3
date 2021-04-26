@@ -1,0 +1,28 @@
+using System;
+
+class Employee
+{
+    private int EmployeeId;
+    private string EmployeeName;
+    
+    public Employee(int _employeeId,string _employeeName)
+    {
+        EmployeeId = _employeeId;
+        EmployeeName= _employeeName;
+    }
+    public void ShowEmployeeDetails()
+    {
+        Console.WriteLine("Employee ID:"+ EmployeeId);
+        Console.WriteLine("Employee Name:"+EmployeeName);
+        
+    }
+    
+    }
+    class program
+    {
+    static void Main() 
+    {
+        Employee emp= new Employee(101,"Subhiksha");
+        emp.ShowEmployeeDetails();
+    }
+    }

@@ -1,0 +1,24 @@
+using System;
+
+static class Class1
+{
+    static Class1()
+
+{
+    Console.WriteLine("Hi");
+    
+}
+public static string Topic = "Static Class";
+public static void sum()
+{
+    Console.WriteLine("hi ! i am a static function");
+}
+}
+class Client
+{
+public static void Main()
+{
+Class1.sum();
+    Console.WriteLine(Class1.Topic);
+}
+}

@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main() {
+        string color= "It is a bad color";
+        if(color.Contains("is a"))
+        {
+          Console.Write("present");  
+        }
+else{
+        Console.Write("absent");
+    }
+}
+}

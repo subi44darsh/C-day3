@@ -1,0 +1,35 @@
+using System;
+ interface I1
+ {
+     void myMethod();
+ }
+ interface I2
+ {
+     void myMethod();
+     
+ }
+ class MultipleInhertance:I1,I2
+ {
+      void I1.myMethod()
+     {
+         Console.WriteLine("Hello I am interface 1 method");
+     }
+       void I2.myMethod()
+     {
+         Console.WriteLine("Hello I am interface 2 method");
+     }
+ }
+ public class Clinet
+ {
+     public static void Main()
+     {
+         MultipleInhertance Obj1= new MultipleInhertance();
+        I1 Interface1= Obj1;
+         Interface1.myMethod(); 
+         
+       I2 Interface2=Obj1;
+         Interface2.myMethod();
+         
+         
+     }
+ }
